@@ -1,5 +1,7 @@
 # Parcel Practices
 
+![](/assets/Parcel-Demo.png)
+
 ## How To Usage
 
 ```batch
