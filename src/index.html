@@ -8,13 +8,32 @@
 <link rel="stylesheet" href="/scss/custom.scss">
 
 <body>
-
     <div class="container pt-5">
-        <h1>Hello Wrold</h1>
-        <p>
-            JavaScript In The World.
-        <div class="btn btn-primary">Click Me</div>
-        </p>
+        <h1 class="display-2 text-center mb-3 mb-lg-4">Language Detector</h1>
+        <div class="mx-auto text-center">
+            <a class="btn btn-outline-primary" href="https://sdwh.dev" target="_blank">sdwh.dev</a>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="mb-3 position-relative">
+                    <img src="/assets/openmoji-nerd-face.svg" style="width:75px;right:-12px;top:-5px;" class="position-absolute">
+                    <label for="langInput" class="form-label">Language Input</label>
+                    <textarea class="form-control border-primary" 
+                    id="langInput" rows="6" autofocus></textarea>
+                </div>
+            </div>
+            <div class="col-12 display-3">
+                <p id="lang-display"></p>
+            </div>
+        </div>
+
+        <footer class="text-end">
+            Library Usage <a href="https://www.npmjs.com/package/franc">franc</a> &
+             <a href="https://www.npmjs.com/package/iso-639-3">iso-639-3</a> <br/>
+             Emojis designed by <a href="https://openmoji.org/" target="_blank">OpenMoji</a> 
+             – the open-source emoji and icon project. License: CC BY-SA 4.0
+        </footer>
     </div>
 
     <script type="module" src="/src/index.js"></script>
