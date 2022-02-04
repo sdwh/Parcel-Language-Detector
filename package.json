@@ -2,11 +2,10 @@
   "name": "parceldev",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel ./src/index.html",
-    "prebuild": "npx rimraf build",
-    "build": "parcel build --public-url ./ ./src/index.html --experimental-scope-hoisting --out-dir build"
+    "prebuild": "npx rimraf build && rmdir public /s /q",
+    "build": "parcel build ./src/index.html --dist-dir ./public"
   },
   "keywords": [],
   "author": "",

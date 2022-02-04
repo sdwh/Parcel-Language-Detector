@@ -13,7 +13,7 @@ npm run dev
 "scripts": {
   "dev": "parcel ./src/index.html",
   "prebuild": "npx rimraf build && rmdir public /s /q",
-  "build": "parcel build ./src/index.html --dist-dir ./public "
+  "build": "parcel build ./src/index.html --dist-dir ./public"
 },
 ```
 
